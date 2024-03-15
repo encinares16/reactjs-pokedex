@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { removeActiveState } from "../js/removeActiveState";
+import { removeActiveState } from "../scripts/removeActiveState";
 import { memo, useRef, useState } from "react"
 import { ButtonTheme } from "./ButtonTheme"
 import { Types } from "./Types";

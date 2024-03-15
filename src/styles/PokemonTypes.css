@@ -71,7 +71,6 @@
 .species.water > .species_item { background-color: var(--color-secondary-water); }
 .species.water > .species_item > .types { background-color: var(--color-primary-water); }
 
-
 .types.bug { background-image: url('/src/assets/svg/bug.svg'); }
 .types.dark { background-image: url('/src/assets/svg/dark.svg'); }
 .types.dragon { background-image: url('/src/assets/svg/dragon.svg'); }
@@ -97,7 +96,32 @@
 .species > .species_item.no.data { background-color: var(--color-secondary-electric); }
 
 
+/* Cards Types Backdrop*/
+.pokemon_types {
+    width: 150px;
+    height: 150px;
+    background-size: 100px;
+    margin-bottom: .5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-
-
-
+.pokemon_types.bug { background-image: url('/src/assets/svg/bug.svg'); }
+.pokemon_types.dark { background-image: url('/src/assets/svg/dark.svg'); }
+.pokemon_types.dragon { background-image: url('/src/assets/svg/dragon.svg'); }
+.pokemon_types.electric { background-image: url('/src/assets/svg/electric.svg'); }
+.pokemon_types.fairy { background-image: url('/src/assets/svg/fairy.svg'); }
+.pokemon_types.fighting { background-image: url('/src/assets/svg/fighting.svg'); }
+.pokemon_types.fire { background-image: url('/src/assets/svg/fire.svg'); }
+.pokemon_types.flying { background-image: url('/src/assets/svg/flying.svg'); }
+.pokemon_types.ghost { background-image: url('/src/assets/svg/ghost.svg'); }
+.pokemon_types.grass { background-image: url('/src/assets/svg/grass.svg'); }
+.pokemon_types.ground { background-image: url('/src/assets/svg/ground.svg'); }
+.pokemon_types.ice { background-image: url('/src/assets/svg/ice.svg'); }
+.pokemon_types.normal { background-image: url('/src/assets/svg/normal.svg'); }
+.pokemon_types.pokedex { background-image: url('/src/assets/svg/pokedex.svg'); }
+.pokemon_types.psychic { background-image: url('/src/assets/svg/psychic.svg'); }
+.pokemon_types.rock { background-image: url('/src/assets/svg/rock.svg'); }
+.pokemon_types.steel { background-image: url('/src/assets/svg/steel.svg'); }
+.pokemon_types.water { background-image: url('/src/assets/svg/water.svg'); }
+.pokemon_types.poison { background-image: url('/src/assets/svg/poison.svg'); }
