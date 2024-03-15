@@ -66,13 +66,18 @@ body {
 
 @media only screen and (max-width: 1200px) {
     .button, .sidenav_button {
-        padding: .4rem;
+        padding: .5rem 1.5rem;
         font-size: 12px;
     }
-
     .title {
-        font-size: 32px;
+        font-size: 24px;
     }
+    .generation {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        font-size: 9px;
+    } 
 }
 @media only screen and (max-width: 700px) {
     .title {
