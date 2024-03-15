@@ -6,7 +6,7 @@ export const Types = memo(function Types({types}){
     return (<>
         <div className='types_container'>
             {/* <img src={`src\\assets\\svg\\${types}.svg`} alt={`pokemon_types ${types}`} className='pokemon_types'/> */}
-            <img src={`public/svg/${types}.svg`} alt={`pokemon_types ${types}`} className='pokemon_types'/>
+            <img src={`/svg/${types}.svg`} alt={`pokemon_types ${types}`} className='pokemon_types'/>
         </div>
     </>)
 })
