@@ -1,0 +1,103 @@
+.species {
+    display: flex;
+    width: 90%;
+    position: relative;
+    gap: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--color-primary-white);
+}
+
+.species_item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 3px;
+    border: none;
+    border-radius: 20px;
+    border: var(--color-border2);
+    padding: .3rem .8rem .3rem .3rem;
+}
+
+.types {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.species.bug > .species_item { background-color: var(--color-secondary-bug) }
+.species.bug > .species_item > .types { background-color: var(--color-primary-bug) }
+.species.dark > .species_item { background-color: var(--color-secondary-dark) }
+.species.dark > .species_item > .types { background-color: var(--color-primary-dark) }
+.species.dragon > .species_item { background-color: var(--color-secondary-dragon) }
+.species.dragon > .species_item > .types { background-color: var(--color-primary-dragon) }
+.species.electric > .species_item { background-color: var(--color-secondary-electric) }
+
+.species.electric > .species_item > .types { background-color: var(--color-primary-electric)}
+.species.fairy > .species_item { background-color: var(--color-secondary-fairy) }
+.species.fairy > .species_item > .types { background-color: var(--color-primary-fairy) }
+
+.species.fire > .species_item { background-color: var(--color-secondary-fire) }
+.species.fire > .species_item > .types { background-color: var(--color-primary-fire) }
+.species.flying > .species_item { background-color: var(--color-secondary-flying); }
+.species.flying > .species_item > .types { background-color: var(--color-primary-flying); }
+.species.fighting > .species_item { background-color: var(--color-secondary-fighting); }
+.species.fighting > .species_item > .types { background-color: var(--color-primary-fighting); }
+.species.ghost  > .species_item { background-color: var(--color-secondary-ghost ); }
+.species.ghost  > .species_item > .types { background-color: var(--color-primary-ghost ); }
+.species.ghost  > .species_item { background-color: var(--color-secondary-ghost ); }
+.species.ghost  > .species_item > .types { background-color: var(--color-primary-ghost ); }
+.species.grass > .species_item { background-color: var(--color-secondary-grass); }
+.species.grass > .species_item > .types { background-color: var(--color-primary-grass); }
+
+.species.ground > .species_item { background-color: var(--color-secondary-ground); }
+.species.ground > .species_item > .types { background-color: var(--color-primary-ground); }
+.species.ice > .species_item { background-color: var(--color-secondary-ice); }
+.species.ice > .species_item > .types { background-color: var(--color-primary-ice); }
+.species.normal > .species_item { background-color: var(--color-secondary-normal); }
+.species.normal > .species_item > .types { background-color: var(--color-primary-normal); }
+.species.poison > .species_item { background-color: var(--color-secondary-poison); }
+.species.poison > .species_item > .types { background-color: var(--color-primary-poison); }
+.species.psychic > .species_item { background-color: var(--color-secondary-psychic); }
+.species.psychic > .species_item > .types { background-color: var(--color-primary-psychic); }
+
+.species.rock > .species_item { background-color: var(--color-secondary-rock); }
+.species.rock > .species_item > .types { background-color: var(--color-primary-rock); }
+.species.steel > .species_item { background-color: var(--color-secondary-steel); }
+.species.steel > .species_item > .types { background-color: var(--color-primary-steel); }
+.species.water > .species_item { background-color: var(--color-secondary-water); }
+.species.water > .species_item > .types { background-color: var(--color-primary-water); }
+
+
+.types.bug { background-image: url('/src/assets/svg/bug.svg'); }
+.types.dark { background-image: url('/src/assets/svg/dark.svg'); }
+.types.dragon { background-image: url('/src/assets/svg/dragon.svg'); }
+.types.electric { background-image: url('/src/assets/svg/electric.svg'); }
+.types.fairy { background-image: url('/src/assets/svg/fairy.svg'); }
+.types.fighting { background-image: url('/src/assets/svg/fighting.svg'); }
+.types.fire { background-image: url('/src/assets/svg/fire.svg'); }
+.types.flying { background-image: url('/src/assets/svg/flying.svg'); }
+.types.ghost { background-image: url('/src/assets/svg/ghost.svg'); }
+.types.grass { background-image: url('/src/assets/svg/grass.svg'); }
+.types.ground { background-image: url('/src/assets/svg/ground.svg'); }
+.types.ice { background-image: url('/src/assets/svg/ice.svg'); }
+.types.normal { background-image: url('/src/assets/svg/normal.svg'); }
+.types.pokedex { background-image: url('/src/assets/svg/pokedex.svg'); }
+.types.psychic { background-image: url('/src/assets/svg/psychic.svg'); }
+.types.rock { background-image: url('/src/assets/svg/rock.svg'); }
+.types.steel { background-image: url('/src/assets/svg/steel.svg'); }
+.types.water { background-image: url('/src/assets/svg/water.svg'); }
+.types.poison { background-image: url('/src/assets/svg/poison.svg'); }
+
+/* Onload */
+.species > .species_item.no.data > .types { background-color: var(--color-primary-electric); }
+.species > .species_item.no.data { background-color: var(--color-secondary-electric); }
+
+
+
+
+
+

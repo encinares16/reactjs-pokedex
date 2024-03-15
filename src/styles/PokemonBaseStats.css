@@ -1,0 +1,39 @@
+.pb, .progress_bar, .progress  {
+    height: 1.1rem;
+}
+
+.pb {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .4rem;
+}
+
+.pb > p:nth-child(1)  {
+    width: 75px;
+}
+
+.progress_bar {
+    width: 100%;
+    background-color: rgb(251, 251, 251);
+    border-radius: 20px;
+    margin: 0 .4rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: rgb(99, 255, 79);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.progress.health{
+    background-color: rgb(255, 78, 78);
+}
+
+.progress.defense{
+    background-color: rgb(78, 119, 255);
+}
+
+
+/* .progress_bar.grass{ background-color: var(--color-secondary-grass); } */
