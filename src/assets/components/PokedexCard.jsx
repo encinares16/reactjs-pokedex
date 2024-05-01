@@ -12,7 +12,6 @@ export const PokedexCard = ({ data, loading }) => {
     const [isLoading, setIsLoading] = useState(loading);
     let species = useRef();
 
-
     useEffect(() => {
         setIsLoading(true)
         try {
@@ -33,6 +32,7 @@ export const PokedexCard = ({ data, loading }) => {
             <div className="pokemon_id_container">
                 <p className={`pokemon_id ${species.current}`}>{data.id < 1000 ? (`#0${data.id}`) : data.id }</p>
                 <input type="button" className={`close_button ${species.current}`} value="x" onClick={()=>{
+                    // setData('react-pokedex-lightbox', {display: "none"})
                     document.getElementById('lightbox').style.display = "none"
                 }}/>
 

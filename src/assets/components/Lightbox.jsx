@@ -1,3 +1,4 @@
+import getLocalStorageData from '../scripts/getLocalStorageData';
 import '../styles/Lightbox.css'
 import { PokedexCard } from './PokedexCard'
 import PropTypes from 'prop-types';
@@ -5,9 +6,10 @@ import PropTypes from 'prop-types';
 export const Lightbox = ({ data, isLoading }) => {
 
   // console.log(data == 0)
+  const display = getLocalStorageData('react-pokedex-lightbox').display
 
   return (
-    <div id='lightbox'>
+    <div id='lightbox' className={`lightbox ${display}`}>
         {data == 0 ? '' : <PokedexCard data={data} loading={isLoading} /> }
     </div>
   )

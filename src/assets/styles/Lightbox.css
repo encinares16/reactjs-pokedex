@@ -1,4 +1,4 @@
-#lightbox {
+.lightbox {
     display: none;
     justify-content: center;
     align-items: center;
@@ -11,5 +11,16 @@
     right: 0;
     z-index: 2;
     margin: auto;
-    padding-left: .5rem;
 }
+
+/* .lightbox {
+    display: flex;
+} */
+
+/* .lightbox.none {
+    display: none;
+}
+
+.lightbox.flex {
+
+} */

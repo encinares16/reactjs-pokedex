@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import { Types } from "./Types"
 import '../styles/Main.css'
+// import getLocalStorageData from '../scripts/getLocalStorageData';
 
 export const PokedexGrid = (props) => {
 
-    const show = () => {
-        // console.log("Yeahxx")
-        document.getElementById('lightbox').style.display = "flex"
-    }
+    // const show = () => {
+    //     // document.getElementById('lightbox').style.display = "flex"
+    //     // console.log(getLocalStorageData('react-pokedex-lightbox').display)
+    // }
 
   return (<>
     <div className="grid cards"> 
@@ -19,7 +20,8 @@ export const PokedexGrid = (props) => {
                     <div>
                         <div className={`card ${types} `} key={data.id} onClick={()=>{
                             props.pokemonData(data)
-                            show()
+                            document.getElementById('lightbox').style.display = "flex"
+                            // setData('react-pokedex-lightbox', {display: "flex"})
                         }}>
                             <p className={`card_pokemon_id ${types}`}>&nbsp;&nbsp;#{data.id}</p>                               
                             <div className="card_id_pokeball">

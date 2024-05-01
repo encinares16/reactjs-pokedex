@@ -275,11 +275,11 @@ input[value="x"]{
         justify-content: space-between;
         align-self: center;
         align-content: center;
-        width: 98%;
+        width: 92%;
         border-radius: 17px;
         border: 1px solid hsla(0, 0%, 7%, 0.476);
         box-shadow: var(--drop-shadow);
-        padding: 24px 0;
+        padding: 16px 0;
         min-height: 380px;
         margin: auto;
     }
