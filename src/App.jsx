@@ -1,14 +1,14 @@
 import Links from "./assets/components/NavLink";
 import { Outlet } from "react-router-dom";
-
-import getLocalStorageData from "./assets/scripts/getLocalStorageData";
-import setData from "./assets/scripts/setData"
 import { useState } from "react";
+
+import setData from "./assets/scripts/setData"
+import getLocalStorageData from "./assets/scripts/getLocalStorageData";
 
 export default function App() {
 
+  setData('react-pokedex-theme', {theme: "light"});
   const [theme, setTheme] = useState(getLocalStorageData('react-pokedex-theme').theme);
-  
   const body = document.querySelector('body')
 
   const light = () => {
