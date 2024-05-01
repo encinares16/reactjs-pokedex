@@ -10,7 +10,7 @@ export const PokedexGrid = (props) => {
     }
 
   return (<>
-    <div className="grid cards" > 
+    <div className="grid cards"> 
         { props.isLoading ? <h1>Loading...</h1> : 
         props.pokemon.map((data) => {
             let types = data.types.map(d => d.type.name)[0]

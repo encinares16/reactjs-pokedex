@@ -11,7 +11,6 @@ export default function App() {
       </header>
       <div className="generation">
           <h1>GENERATION</h1>
-          <p>under development :)</p>
           <Links/>
       </div>
       <Outlet/>

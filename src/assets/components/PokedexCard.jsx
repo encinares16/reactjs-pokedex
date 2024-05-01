@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from 'react'
 import { PokemonTypes } from './PokemonTypes'
-import { Pokeball } from './Pokeball'
+// import { Pokeball } from './Pokeball'
 import { PokemonCardOnLoad } from './PokemonCardOnLoad'
 import { PokemonInfo } from './PokemonInfo'
 import { PokemonBaseStats } from './PokemonBaseStats'
@@ -25,14 +25,18 @@ export const PokedexCard = ({ data, loading }) => {
 
     return (
     <>
-   
     <div className={`pokemon_card ${species.current}`}>
-        
           {(!data) ? <PokemonCardOnLoad/>
           : <>
-          <Pokeball types={`${species.current}`}/>
-          <p className={`pokemon_id ${species.current}`}>{data.id < 1000 ? (`#0${data.id}`) : data.id }</p>
+          {/* <Pokeball types={`${species.current}`}/> */}
+          {/* <p className={`pokemon_id ${species.current}`}>{data.id < 1000 ? (`#0${data.id}`) : data.id }</p> */}
+            <div className="pokemon_id_container">
+                <p className={`pokemon_id ${species.current}`}>{data.id < 1000 ? (`#0${data.id}`) : data.id }</p>
+                <input type="button" className={`close_button ${species.current}`} value="x" onClick={()=>{
+                    document.getElementById('lightbox').style.display = "none"
+                }}/>
 
+            </div>
             <div className={`pokemon_profile_container ${species}`}> 
                 { isLoading  == true
                 ? (<> <div className="loading_container"><div className="loading"></div> <p>Loading API...</p> </div></>) 
@@ -47,9 +51,7 @@ export const PokedexCard = ({ data, loading }) => {
           </> 
     }
     </div>
-    <input type="button" value="x" onClick={()=>{
-            document.getElementById('lightbox').style.display = "none"
-    }}/>
+ 
     </>
   )
 }

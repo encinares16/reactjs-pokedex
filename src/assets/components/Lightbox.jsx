@@ -8,7 +8,7 @@ export const Lightbox = ({ data, isLoading }) => {
 
   return (
     <div id='lightbox'>
-        {data == 0 ? null : <PokedexCard data={data} loading={isLoading} /> }
+        {data == 0 ? '' : <PokedexCard data={data} loading={isLoading} /> }
     </div>
   )
 }

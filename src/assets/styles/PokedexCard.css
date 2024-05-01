@@ -35,18 +35,22 @@
     top: 55px;
 }
 
-.pokemon_id {
-    font-weight: 800;
-    font-size: 54px;
-    margin: auto;
+.pokemon_id_container{
+    display: flex;
+    justify-content: space-between;
     width: 90%;
 }
 
-.pokemon_id.onload{
+.pokemon_id {
+    font-weight: 800;
+    font-size: 54px;
+}
+
+/* .pokemon_id.onload{
     position: relative;
     top: -1.9rem;
     left: -20px;
-}
+} */
 
 .pokemon_info, .base_stat {
     width: 100%;
@@ -71,11 +75,7 @@
 }
 
 input[value="x"]{
-    position: fixed;
     border: none;
-    left: 0;
-    right: -410px;
-    margin: 0 auto 560px;
     font-size: 1.8rem;
     max-width: 35px;
     background: none;
@@ -84,14 +84,8 @@ input[value="x"]{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 380px) {
-    input[value="x"]{
-        position: relative;
-        left: -2rem;
-        margin: 0 auto 25rem; 
-        font-size: 1.2rem;
-    }
-}
+
+
 
 .pokemon_card_profile {
     position: relative;
@@ -147,28 +141,28 @@ input[value="x"]{
 
 
  /* Pokemon Card Pokedex ID*/
-.pokemon_card.bug, .pokemon_id.bug { color: var(--color-secondary-bug); }
-.pokemon_card.dark, .pokemon_id.dark { color: var(--color-secondary-dark); }
-.pokemon_card.dragon, .pokemon_id.dragon { color: var(--color-secondary-dragon); }
-.pokemon_card.electric, .pokemon_id.electric { color: var(--color-secondary-electric); }
-.pokemon_card.fairy, .pokemon_id.fairy { color: var(--color-secondary-fairy); }
+.pokemon_card.bug, .pokemon_id.bug, .close_button.bug { color: var(--color-secondary-bug); }
+.pokemon_card.dark, .pokemon_id.dark, .close_button.dark { color: var(--color-secondary-dark); }
+.pokemon_card.dragon, .pokemon_id.dragon, .close_button.dragon { color: var(--color-secondary-dragon); }
+.pokemon_card.electric, .pokemon_id.electric, .close_button.electric { color: var(--color-secondary-electric); }
+.pokemon_card.fairy, .pokemon_id.fairy, .close_button.fairy { color: var(--color-secondary-fairy); }
 
-.pokemon_card.fire, .pokemon_id.fire { color: var(--color-secondary-fire); }
-.pokemon_card.flying, .pokemon_id.flying { color: var(--color-secondary-flying); }
-.pokemon_card.fighting, .pokemon_id.fighting { color: var(--color-secondary-fighting); }
-.pokemon_card.ghost, .pokemon_id.ghost  { color: var(--color-secondary-ghost ); }
-.pokemon_card.grass, .pokemon_id.grass  { color: var(--color-secondary-grass ); }
+.pokemon_card.fire, .pokemon_id.fire, .close_button.fire { color: var(--color-secondary-fire); }
+.pokemon_card.flying, .pokemon_id.flying, .close_button.flying { color: var(--color-secondary-flying); }
+.pokemon_card.fighting, .pokemon_id.fighting, .close_button.fighting { color: var(--color-secondary-fighting); }
+.pokemon_card.ghost, .pokemon_id.ghost, .close_button.ghost  { color: var(--color-secondary-ghost ); }
+.pokemon_card.grass, .pokemon_id.grass, .close_button.grass  { color: var(--color-secondary-grass ); }
 
-.pokemon_card.ground, .pokemon_id.ground { color: var(--color-secondary-ground ); }
-.pokemon_card.ice, .pokemon_id.ice { color: var(--color-secondary-ice ); }
-.pokemon_card.normal, .pokemon_id.normal { color: var(--color-secondary-normal ); }
-.pokemon_card.poison, .pokemon_id.poison { color: var(--color-secondary-poison ); }
-.pokemon_card.psychic, .pokemon_id.psychic { color: var(--color-secondary-psychic ); }
+.pokemon_card.ground, .pokemon_id.ground, .close_button.ground { color: var(--color-secondary-ground ); }
+.pokemon_card.ice, .pokemon_id.ice, .close_button.ice { color: var(--color-secondary-ice ); }
+.pokemon_card.normal, .pokemon_id.normal, .close_button.normal { color: var(--color-secondary-normal ); }
+.pokemon_card.poison, .pokemon_id.poison, .close_button.poison { color: var(--color-secondary-poison ); }
+.pokemon_card.psychic, .pokemon_id.psychic, .close_button.psychic { color: var(--color-secondary-psychic ); }
 
-.pokemon_card.rock, .pokemon_id.rock { color: var(--color-secondary-rock ); }
-.pokemon_card.steel, .pokemon_id.steel { color: var(--color-secondary-steel ); }
-.pokemon_card.water, .pokemon_id.water { color: var(--color-secondary-water ); }
-.pokemon_card.onload, .pokemon_id.onload { color: var(--color-secondary-electric ); }
+.pokemon_card.rock, .pokemon_id.rock, .close_button.rock { color: var(--color-secondary-rock ); }
+.pokemon_card.steel, .pokemon_id.steel, .close_button.steel { color: var(--color-secondary-steel ); }
+.pokemon_card.water, .pokemon_id.water, .close_button.water { color: var(--color-secondary-water ); }
+.pokemon_card.onload, .pokemon_id.onload, .close_button.onload { color: var(--color-secondary-electric ); }
 
 
 /* Pokemon Card  */
@@ -260,7 +254,7 @@ input[value="x"]{
 }
 
 @media only screen and (max-width: 380px) {
-    
+   
     header{ width: 98%; }
     header > h1 { font-size: 24px; }
     header > p { font-size: 16px; }
@@ -271,20 +265,30 @@ input[value="x"]{
         font-size: 24px;  
     }
 
+
+    .pokemon_id_container{
+        height: 3rem;
+    }
+
     .pokemon_card {
         display: flex;
         justify-content: space-between;
-        width: 95%;
+        align-self: center;
+        align-content: center;
+        width: 98%;
         border-radius: 17px;
         border: 1px solid hsla(0, 0%, 7%, 0.476);
         box-shadow: var(--drop-shadow);
         padding: 24px 0;
-        margin: 0;
         min-height: 380px;
+        margin: auto;
     }
+
     .pokemon_card_profile {
-        max-height: 105px;
-        max-width: 100px;
+        position: relative;
+        margin: auto;
+        min-width: 105px;
+        max-height: 240px;
     }
 
     .pokeball_container {
@@ -294,10 +298,6 @@ input[value="x"]{
         max-width: 90px;
     }
 
-    .info_button{
-        background: red;
-        font-size: 10px;
-    }
 
     @keyframes pokemonImage {
         0%   { top:0px;}
@@ -317,17 +317,33 @@ input[value="x"]{
         top: 25px;
     }
 
+    .info .info_nav > .info_button {
+        font-size: 10px;
+        border-radius: 16px;
+        padding: .2rem .35rem .2rem;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        margin-bottom: .5rem;
+    }
+
     .pokemon_id {
         font-weight: 800;
-        font-size: 36px;
+        font-size: 32px;
         margin: 0 auto;
         width: 90%;
     }
-
-    .pokemon_id.onload{
+    
+    input[value="x"]{
+        font-size: 1.2rem;
         position: relative;
-        top: -1.9rem;
-        left: -20px;
+        top: -.9rem;
+        right: .35rem;
+    }
+
+
+    .pokemon_card_profile {
+        width: 50%;
     }
 
     .pokemon_profile_container > h1 {

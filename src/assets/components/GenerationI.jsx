@@ -33,7 +33,6 @@ useEffect(()=>{
   return(<>
     <div>
       <Lightbox data={data} isLoading={loading}/>
-      {/* {loading ? 'x' : pokeData.map(data => data.name)} */}
       <PokedexGrid isLoading={loading} pokemon={pokeData} pokemonData = {poke => setData(poke)} />
     </div>
   </>
