@@ -50,10 +50,9 @@
     background: rgb(26, 26, 26);
     box-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.35);
     cursor: pointer;
-    filter: saturate(25%) ;
+    filter: saturate(75%) ;
 }
 .card:hover {
-    transition: .2s ease;
     filter: saturate(120%);
 }
 
@@ -75,7 +74,6 @@
 .card_id_pokeball {
     display: flex;
     justify-content: space-between;
-
     width: 100%;
     margin: auto;
     top: 120px;

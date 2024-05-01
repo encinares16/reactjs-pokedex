@@ -36,4 +36,16 @@
 }
 
 
+.info_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(78, 119, 255); */
+
+}
+
+.info_nav .info_button.grass{
+    background: red;
+}
+
 /* .progress_bar.grass{ background-color: var(--color-secondary-grass); } */

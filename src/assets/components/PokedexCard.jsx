@@ -9,9 +9,10 @@ import '../styles/PokedexCard.css'
 
 export const PokedexCard = ({ data, loading }) => {
   
-    const [isLoading, setIsLoading] = useState(loading)
-    let species = useRef()
-    
+    const [isLoading, setIsLoading] = useState(loading);
+    let species = useRef();
+
+
     useEffect(() => {
         setIsLoading(true)
         try {
@@ -24,6 +25,7 @@ export const PokedexCard = ({ data, loading }) => {
 
     return (
     <>
+   
     <div className={`pokemon_card ${species.current}`}>
         
           {(!data) ? <PokemonCardOnLoad/>
@@ -39,26 +41,15 @@ export const PokedexCard = ({ data, loading }) => {
                 </div>
             <div className="info_container">
                 <PokemonTypes data={data.types.map(e => e.type.name)} types={species.current} />
-                {/* <div className={`pokemon_info ${species.current}`}>
-                        <div className="info">
-                            <p>Pokemon ID: &nbsp;{data.id}</p> 
-                            <p>Name: &nbsp; { data.name.charAt(0).toUpperCase() + data.name.slice(1) }</p> 
-                            <p>Height: &nbsp;{data.height * 10}cm</p> 
-                            <p>Weight: &nbsp;{data.weight / 10}kg</p> 
-                            <div className="abilities"> 
-                                <p>Skills:&nbsp; </p>
-                                {skillsArray[0].map((data, index) => (<div key={index}> 
-                                <div> { data[index] === undefined ? "404" :  data.charAt(0).toUpperCase() + data.slice(1) } &nbsp; </div>
-                            </div>))}
-                            </div>
-                        </div>
-                </div> */}
                 <PokemonInfo species={data => species.current = data} data={data}/>
                 <PokemonBaseStats species={data => species.current = data} data={data}/>
             </div>
           </> 
     }
     </div>
+    <input type="button" value="x" onClick={()=>{
+            document.getElementById('lightbox').style.display = "none"
+    }}/>
     </>
   )
 }

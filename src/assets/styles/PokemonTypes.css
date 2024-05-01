@@ -97,14 +97,14 @@
 
 
 /* Cards Types Backdrop*/
-.pokemon_types {
+/* .pokemon_types {
     width: 150px;
     height: 150px;
     background-size: 100px;
     margin-bottom: .5rem;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .pokemon_types.bug { background-image: url('/src/assets/svg/bug.svg'); }
 .pokemon_types.dark { background-image: url('/src/assets/svg/dark.svg'); }

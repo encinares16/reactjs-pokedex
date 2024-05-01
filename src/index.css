@@ -64,6 +64,23 @@ body {
     transition: 0.1s;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
     .button, .sidenav_button {
         padding: .5rem 1.5rem;
@@ -79,8 +96,16 @@ body {
         font-size: 9px;
     } 
 }
+
 @media only screen and (max-width: 700px) {
     .title {
         font-size: 24px;
     }
 }
+
+@media only screen and (max-width: 360px) {
+    body {
+        background: blue;
+    }
+}
+

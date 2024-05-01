@@ -1,0 +1,60 @@
+.types_container {
+    margin: auto;
+    position: relative;
+    top: -30px;
+    left: 28px;
+    overflow: hidden;
+}
+
+.pokemon_types {
+    width: 150px;
+    background-size: 100px;
+    margin-bottom: .5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: opacity(15%);
+    height: 110px;
+}
+
+.pokemon_types.bug{ fill: var(--color-secondary-bug); }
+.pokemon_types.dark{ fill: var(--color-secondary-dark); }
+.pokeball_card.electric{ fill: var(--color-secondary-electric); }
+.pokeball_card.fairy{ fill: var(--color-secondary-fairy); }
+
+.pokeball_card.fire{ fill: var(--color-secondary-fire); }
+.pokeball_card.flying{ fill: var(--color-secondary-flying); }
+.pokeball_card.fighting{ fill: var(--color-secondary-fighting); }
+.pokeball_card.ghost { fill: var(--color-secondary-ghost ); }
+.pokemon_types.grass{ fill: var(--color-secondary-grass); }
+
+.pokeball_card.ground{ fill: var(--color-secondary-ground); }
+.pokeball_card.ice{ fill: var(--color-secondary-ice); }
+.pokeball_card.normal{ fill: var(--color-secondary-normal); }
+.pokeball_card.poison { fill: var(--color-secondary-poison ); }
+.pokeball_card.psychic{ fill: var(--color-secondary-psychic); }
+
+.pokeball_card.rock{ fill: var(--color-secondary-rock); }
+.pokeball_card.steel{ fill: var(--color-secondary-steel); }
+.pokeball_card.water{ fill: var(--color-secondary-water); }
+.pokeball_card.dragon{ fill: var(--color-secondary-dragon); }
+
+
+.pokemon_types.bug { background-image: url('/src/assets/svg/bug.svg'); }
+.pokemon_types.dark { background-image: url('/src/assets/svg/dark.svg'); }
+.pokemon_types.dragon { background-image: url('/src/assets/svg/dragon.svg'); }
+.pokemon_types.electric { background-image: url('/src/assets/svg/electric.svg'); }
+.pokemon_types.fairy { background-image: url('/src/assets/svg/fairy.svg'); }
+.pokemon_types.fighting { background-image: url('/src/assets/svg/fighting.svg'); }
+.pokemon_types.fire { background-image: url('/src/assets/svg/fire.svg'); }
+.pokemon_types.flying { background-image: url('/src/assets/svg/flying.svg'); }
+.pokemon_types.ghost { background-image: url('/src/assets/svg/ghost.svg'); }
+.pokemon_types.grass { background-image: url('/src/assets/svg/grass.svg'); }
+.pokemon_types.ground { background-image: url('/src/assets/svg/ground.svg'); }
+.pokemon_types.ice { background-image: url('/src/assets/svg/ice.svg'); }
+.pokemon_types.normal { background-image: url('/src/assets/svg/normal.svg'); }
+.pokemon_types.pokedex { background-image: url('/src/assets/svg/pokedex.svg'); }
+.pokemon_types.psychic { background-image: url('/src/assets/svg/psychic.svg'); }
+.pokemon_types.rock { background-image: url('/src/assets/svg/rock.svg'); }
+.pokemon_types.steel { background-image: url('/src/assets/svg/steel.svg'); }
+.pokemon_types.water { background-image: url('/src/assets/svg/water.svg'); }
+.pokemon_types.poison { background-image: url('/src/assets/svg/poison.svg'); }

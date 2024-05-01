@@ -1,31 +1,13 @@
 .pokeball_container {
-    display: flex;
-    position: absolute;
-    margin: auto;
-    top: 8.7rem;
-    right: 6rem;
-}
-.pokeball_container > svg {
-    width: 176px;
-    height: 176px;
+    position: fixed;
+    left: 12rem;
+    right: 0;
+    margin: 0 auto 18rem;
+    /* padding-bottom: 20rem; */
+    max-width: 200px;
 }
 
-.pokeball_container {
-    animation-name: pokeball_container;
-    animation-duration: 1.8s;
-    animation-iteration-count: ease-in-out;
-    /* animation-delay: .5s; */
-}
-
-@keyframes pokeball_container {
-    0%   { rotate: 0}
-    50%  { rotate: 360deg }
-    100% { rotate: 0 }
-}
-
-.pokeball{
-    fill:rgb(24, 24, 24)
-}
+.pokeball{ fill:rgb(24, 24, 24) }
 
 .pokeball.bug{ fill: var(--color-secondary-bug); }
 .pokeball.dark{ fill: var(--color-secondary-dark); }
