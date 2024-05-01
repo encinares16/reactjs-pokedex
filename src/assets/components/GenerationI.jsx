@@ -26,6 +26,7 @@ export default function GenerationI(props){
     })   
   } 
 
+  
 useEffect(()=>{
   fetchPokemonData(setLoading(), url.current, getPokemonData);
 }, [url])
